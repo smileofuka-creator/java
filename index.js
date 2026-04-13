@@ -1020,25 +1020,27 @@
 // console.log(t1, t2, t3);
 
 //1. max ol]
-let max = 0;
-for (let i = 0; i < num.length; i++)
-  if (max < num[i]) {
-    max = num[i];
-  }
-console.log(max);
+// let max = 0;
+// for (let i = 0; i < num.length; i++)
+//   if (max < num[i]) {
+//     max = num[i];
+//   }
+// console.log(max);
 
 //2. max value change to last index
-//3. sort
 
-let num = [1, 3, 5, 7, 9, 2, 4, 6, 8, 10];
-
+//
+//3. sor
+// console.log(num);
 // for (let i = 0; i < num.length; i++) {
-//   for (let j = 0; j < num.length; j++)
-//     if (num[j] < num[j + 1]) {
-//       let temp = num[j];
-//       num[j] = num[j + 1];
-//       num[j + 1] = temp;
+//   for (let j = i + 1; j < num.length; j++) {
+//     if (num[i] > num[j]) {
+//       console.log(num[j], "iig", num[i], "tai swap hiile");
+//       let temp = num[i];
+//       num[i] = num[j];
+//       num[j] = temp;
 //     }
+//   }
 // }
 // console.log(num);
 
