@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.zahailga {
+  width: 800px;
+  height: 500px;
+  background-color: bisque;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#order {
+  display: flex;
+  gap: 20px;
+}
+#detial {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+}
+#words {
+  border: 5px;
+}
