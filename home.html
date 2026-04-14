@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="guess.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title">1-100 хүртэлх зөвхөн бүхэл тоо оруулна уу</h1>
+      <div class="inputdetial">
+        <input type="number" id="input" placeholder="Тоогоо бичнэ үү " />
+        <button onclick="check()" id="guess">Таах</button>
+      </div>
+      <p id="message"></p>
+      <p class="attempts-text">Оролдлогын тоо: <span id="attempts">0</span></p>
+    </div>
+    <script src="./guess.js"></script>
+  </body>
+</html>
