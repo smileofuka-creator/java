@@ -83,32 +83,39 @@
 // });
 
 // 1. Ээлжийг хадгалах хувьсагч (тоглогч солигдоход ашиглана)
-let turn = "X";
+// let turn = "X";
 
-// 2. Бүх нүднүүдийг сонгож авах
-const cells = document.querySelectorAll(".grid-container > div");
+// // 2. Бүх нүднүүдийг сонгож авах
+// const cells = document.querySelectorAll(".grid-container > div");
 
-// 3. Нүд бүр дээр onclick үйлдэл нэмэх
-cells.forEach((cell, index) => {
-  cell.onclick = function () {
-    // Зөвхөн хоосон нүдэн дээр дарахад ажиллана
-    if (cell.innerText === "") {
-      // Одоогийн тоглогчийн тэмдэгтийг (X эсвэл O) нүдэнд бичнэ
-      cell.innerText = turn;
+// // 3. Нүд бүр дээр onclick үйлдэл нэмэх
+// cells.forEach((cell, index) => {
+//   cell.onclick = function () {
+//     // Зөвхөн хоосон нүдэн дээр дарахад ажиллана
+//     if (cell.innerText === "") {
+//       // Одоогийн тоглогчийн тэмдэгтийг (X эсвэл O) нүдэнд бичнэ
+//       cell.innerText = turn;
 
-      // Консол дээр мэдээлэл хэвлэх
-      console.log("Нүдний дугаар: " + index + ", Тэмдэгт: " + turn);
+//       // Консол дээр мэдээлэл хэвлэх
+//       console.log("Нүдний дугаар: " + index + ", Тэмдэгт: " + turn);
 
-      // CSS өнгийг тоглогчоос хамаарч өөрчлөх (Сонголттой)
-      if (turn === "X") {
-        cell.style.color = "#33ccff"; // X нь цэнхэр
-        turn = "O"; // Дараагийн ээлж O
-      } else {
-        cell.style.color = "#ffcc00"; // O нь шар
-        turn = "X"; // Дараагийн ээлж X
-      }
-    } else {
-      console.log("Энэ нүд аль хэдийн бөглөрсөн байна!");
-    }
-  };
-});
+//       // CSS өнгийг тоглогчоос хамаарч өөрчлөх (Сонголттой)
+//       if (turn === "X") {
+//         cell.style.color = "#33ccff"; // X нь цэнхэр
+//         turn = "O"; // Дараагийн ээлж O
+//       } else {
+//         cell.style.color = "#ffcc00"; // O нь шар
+//         turn = "X"; // Дараагийн ээлж X
+//       }
+//     } else {
+//       console.log("Энэ нүд аль хэдийн бөглөрсөн байна!");
+//     }
+//   };
+// });
+
+let mes = document.getElementsByClassName("grid-container")[0];
+if (mes.textContent === "") {
+  mes.textContent = X;
+} else {
+  mes.textContent;
+}
